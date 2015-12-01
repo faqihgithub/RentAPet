@@ -29,7 +29,7 @@ li a:hover:not(.active) {
 
 .active {
     background-color: #03B5
-
+/* this is for the animal page */
 h1 {
       text-align:center;
         margin-float-left:auto;
