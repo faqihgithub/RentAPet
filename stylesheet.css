@@ -1,35 +1,109 @@
-body {margin:0;}
-
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #333;
-position: fixed;
-top: 0;
-width: 100%;
+body {
+    background-color: #03b5aa;
+}
+h1{
+    text-align:center;
+    font-size: 50px;
+    text-decoration: underline;
 }
 
-li {
-    float: left;
+img {
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
+#nav {
+    padding: 5px;
     background-color: #333;
+    margin:5px;
+    height:60px;
+
+}
+table {
+    margin-left:auto;
+    margin-right:auto;
+
+}
+#container {
+    padding: 20px;
+    margin-top: 30px;
 }
 
-.active {
-    background-color: #03B5AA;
+#nava {
+    font-size: 30px;
+    padding: 5px;
+    text-align:right;
+    float:right;
+    color: white;
 }
-#img1 {
-    
+
+td {
+    padding: 5px;
+}
+
+#rentapet {
+    position:absolute;
+    font-size: 30px;
+    color: white;
+    left: 30px;
+    top: -5px;
+}
+#panels {
+    vertical-align: middle;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    background: #F9F9F9;
+    padding: 30px;
+    transition: background-color 100ms;
+    color: #8F8A85;
+}
+#cat0 {
+    border: 2px solid black;
+    colspan: 3;
+}
+#cat1 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat2 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat3 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat4 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat5 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat6 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat7 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat8 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat9 {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#cat10 {
+    border: 2px solid black;
+    border-collapse: collapse;
 }
