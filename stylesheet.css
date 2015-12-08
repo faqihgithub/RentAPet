@@ -15,10 +15,15 @@ img {
 }
 
 #nav {
-    padding: 5px;
+    position: fixed;
     background-color: #333;
-    margin:5px;
     height:60px;
+    width:1420px;
+    margin-left:auto;
+    margin-right:auto;
+    top:10px;
+    right:12px;
+
 
 }
 table {
@@ -28,16 +33,18 @@ table {
 }
 #container {
     padding: 20px;
-    margin-top: 30px;
+    margin-top: 40px;
     text-align:center;
 }
 
 #nava {
     font-size: 30px;
-    padding: 5px;
+    padding:25px;
     text-align:right;
     float:right;
     color: white;
+    margin-top: -20px;
+
 }
 
 td {
@@ -49,7 +56,7 @@ td {
     font-size: 30px;
     color: white;
     left: 30px;
-    top: -5px;
+    top: -17px;
 }
 /* slider */
 #slider {
@@ -57,6 +64,10 @@ td {
     overflow: hidden;
     margin: 20px auto 0 auto;
     border-radius: 4px;
+    z-index: -1;
+    top:-15px;
+    width:800px;
+    height:500px;
 }
 
 #slider ul {
@@ -73,10 +84,10 @@ td {
     float: left;
     margin: 0;
     padding: 0;
-    width: 500px;
-    height: 300px;
+    width: 800px;
+    height: 500px;
     text-align: center;
-    line-height: 300px;
+    line-height: 500px;
 }
 
 a.control_prev, a.control_next {
@@ -113,5 +124,82 @@ a.control_next {
     margin: 10px auto;
     width: 160px;
     font-size: 18px;
+    top:-150px;
+    z-index:-2;
 }
+
+/* don't know */
+#panels {
+    vertical-align: middle;
+    text-align: center;
+    height: 70px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    background: #03b5aa;
+    padding: 30px;
+    transition: background-color 100ms;
+    color: #8F8A85;
+}
+#cat0 {
+    border: 2px solid black;
+    background:white;
+    colspan: 3;
+}
+#cat1 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat2 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat3 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat4 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat5 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat6 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat7 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat8 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat9 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat10 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+
+#Monkeybutt {
+    margin-top:-150px;
+}
+
 
