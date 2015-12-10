@@ -6,33 +6,69 @@
     <script type="text/javascript" src="script.js"></script>
     <title>RentAPet</title>
 </head>
-<body style="background-color: #03B5AA">
+<body>
+
+<div>
+    <video width="320" height="240" controls autoplay>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+    </video>
+</div>
+
+<div id="block"></div>
+
 <div id="nav">
-    <table>
-        <tr id="home">Home</tr>
-        <tr id="animal">Animal</tr>
-        <tr id="contact">Contact</tr>
+    <div id="rentapet">
+        <p>Rent A Pet</p>
+    </div>
+    <table id="nava">
+
+        <tr>
+            <div id="home"><td>Home</td></div>
+            <div id="animal"><td>Animals</td></div>
+            <div id="contact"><td>Contact</td></div>
+        </tr>
     </table>
 </div>
-<div>
+
+<div id="container">
+    <div id="slider">
+        <a href="#" class="control_next">>></a>
+        <a href="#" class="control_prev"><</a>
+        <ul id="cider">
+            <li><img src="https://pbs.twimg.com/profile_images/378800000831249044/effb57c08b2f5783c686b589d84d2b92.jpeg" style="width:500px;height:300px";></li>
+            <li><img src="http://wallpaperhdwide.com/wp-content/gallery/funny-pictures-of-cute-animals/cute-animals-13.jpg" style="width:500px;height:300px";></li>
+            <li><img src="http://xyer.co/wallpaper/12/6/cute-animal-amazing.jpg" style="width:500px;height:300px";></li>
+            <li><img src="http://newtonandnoss.com/hedgehogs/babyhedgehog.jpg" style="width:500px;height:300px";></li>
+        </ul>
+    </div>
+
+    <div class="slider_option">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox">Autoplay Slider</label>
+    </div>
+
+
+</div>
+<div id="Monkeybutt">
     <h1 style="text-align: center">Categories of Animals</h1>
     <table id="panels">
         <tr>
             <th id="cat0" colspan="5">Categories</th>
         </tr>
         <tr>
-            <td id="cat1">Category 1</td>
-            <td id="cat2">Category 2</td>
-            <td id="cat3">Category 3</td>
-            <td id="cat4">Category 4</td>
-            <td id="cat5">Category 5</td>
+            <td class="cats" id="cat1" >Category 1</td>
+            <td class="cats" id="cat2" >Category 2</td>
+            <td class="cats" id="cat3" >Category 3</td>
+            <td class="cats" id="cat4" >Category 4</td>
+            <td class="cats" id="cat5" >Category 5</td>
         </tr>
         <tr>
-            <td id="cat6">Category 6</td>
-            <td id="cat7">Category 7</td>
-            <td id="cat8">Category 8</td>
-            <td id="cat9">Category 9</td>
-            <td id="cat10">Category 10</td>
+            <td class="cats" id="cat6" >Category 6</td>
+            <td class="cats" id="cat7" >Category 7</td>
+            <td class="cats" id="cat8" >Category 8</td>
+            <td class="cats" id="cat9" >Category 9</td>
+            <td class="cats" id="cat10">Category 10</td>
         </tr>
     </table>
 </div>
@@ -45,5 +81,21 @@
         </tr>
     </table>
 </div>
+<div id="ericfix">
+    <table id="footer">
+        <tr>
+            <th>About RentAPet</th>
+            <th>For Businesses</th>
+            <th>Support</th>
+        </tr>
+        <tr>
+            <td>About Us</td>
+            <td>Sign In</td>
+            <td>Email Us</td>
+        </tr>
+    </table>
+</div>
+
+
 </body>
 </html>

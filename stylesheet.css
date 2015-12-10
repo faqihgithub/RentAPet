@@ -29,16 +29,8 @@ table {
 #container {
     padding: 20px;
     margin-top: 30px;
+    text-align:center;
 }
-
-#nava {
-    font-size: 30px;
-    padding: 5px;
-    text-align:right;
-    float:right;
-    color: white;
-}
-
 td {
     padding: 5px;
 }
@@ -106,4 +98,101 @@ td {
 #cat10 {
     border: 2px solid black;
     border-collapse: collapse;
+}
+#nava {
+    font-size: 30px;
+    padding: 5px;
+    text-align:right;
+    float:right;
+    color: white;
+}
+/* slider */
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+}
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+}
+
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+}
+#ericfix {
+    background-color: #333;
+    width:100%;
+}
+#logo1 {
+    position: relative;
+    right: 500px;
+}
+#logo2 {
+    position: relative;
+    top: 200px;
+}
+#footer {
+    margin: 0 auto;
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background: #333;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    clear: both;
+}
+#Monkeybutt {
+    background-color: #03b5aa;
 }
