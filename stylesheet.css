@@ -1,0 +1,245 @@
+body {
+    background-color: #03b5aa;
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align:center;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+img {
+    padding: 5px;
+    height: 100px;
+    width: 100px;
+
+}
+
+#nav {
+    position: fixed;
+    background-color: #333;
+    height:60px;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    top: 0;
+
+
+}
+table {
+    margin-left:auto;
+    margin-right:auto;
+
+}
+#container {
+    margin-top: 40px;
+    text-align:center;
+}
+
+#nava {
+    font-size: 30px;
+    padding:25px;
+    text-align:right;
+    float:right;
+    color: white;
+    margin-top: -20px;
+
+}
+
+td {
+    padding: 5px;
+}
+
+#rentapet {
+    position:absolute;
+    font-size: 30px;
+    color: white;
+    left: 30px;
+    top: -17px;
+}
+/* slider */
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
+    z-index: -1;
+    top:-15px;
+    width:800px;
+    height:400px;
+}
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
+}
+
+#slider ul li {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    line-height: 500px;
+}
+
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
+    top:-150px;
+    z-index:-2;
+}
+
+/* don't know */
+#panels {
+    vertical-align: middle;
+    text-align: center;
+    height: 70px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    background: #03b5aa;
+    padding: 30px;
+    transition: background-color 100ms;
+    color: #8F8A85;
+}
+#cat0 {
+    border: 2px solid black;
+    background:white;
+    colspan: 3;
+    height: 50px;
+}
+#cat1 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat2 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat3 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat4 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat5 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat6 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat7 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat8 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat9 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+#cat10 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background:white;
+}
+
+#Monkeybutt {
+    margin-top:-150px;
+}
+
+#video{
+    height: 250px;
+}
+#ericfix {
+    background-color: #333;
+    width:100%;
+
+}
+#logo1 {
+    position: relative;
+    right: 500px;
+}
+#logo2 {
+    position: relative;
+    top: 200px;
+}
+#footer {
+    width: 100%;
+    height: 75px;
+    color: white;
+    text-align: center;
+    background: #333;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    clear: both;
+    bottom:0px;
+
+}
+
+#block {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: #03b5aa;
+}
+
+table td.cats {
+    height: 150px;
+    width: 150px;
+}
