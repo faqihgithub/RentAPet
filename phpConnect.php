@@ -1,13 +1,13 @@
 <?php
 
 /*** mysql hostname ***/
-$hostname = 'localhost';
+$hostname = '127.0.0.1';
 
 /*** mysql username ***/
-$username = 'username';
+$username = 'root';
 
 /*** mysql password ***/
-$password = 'password';
+$password = 'root';
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=mysql", $username, $password);
