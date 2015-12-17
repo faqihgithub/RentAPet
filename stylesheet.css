@@ -93,8 +93,38 @@ td {
     border: 2px solid black;
     border-collapse: collapse;
     background: white;
+    color:white;
 }
-
+#cat1{
+    background-image: url('Pictures/Dog.jpg');
+}
+#cat2{
+    background-image: url('Pictures/Cat.jpg') ;
+}
+#cat3{
+    background-image: url('Pictures/Reptile.jpg');
+}
+#cat4{
+    background-image: url('Pictures/Aquatic.jpg');
+}
+#cat5{
+    background-image: url('Pictures/Sugar.jpg') ;
+}
+#cat6{
+    background-image: Pictures/Dog.jpg ;
+}
+#cat7{
+    background-image: Pictures/Dog.jpg ;
+}
+#cat8{
+    background-image: Pictures/Dog.jpg ;
+}
+#cat9{
+    background-image: Pictures/Dog.jpg ;
+}
+#cat10{
+    background-image: url('Pictures/Farm.jpg') ;
+}
 #Monkeybutt {
     width: 100%;
     background-color: transparent;
