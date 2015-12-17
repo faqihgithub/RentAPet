@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<html>
 <head>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="jquery.js"></script>
     <script type="text/javascript" src="script.js"></script>
     <title>RentAPet</title>
 </head>
-<body>
 
 <div id="video">
-    <video autoplay='' id='header-video' loop='' poster='https://res.cloudinary.com/zozi/video/upload/ac_none,so_0/v1433606865/z/p/video/zozi_homepage_720p_v13.jpg' preload='auto' width='100%'>
-        <source src='videoplayback.mp4' type='video/mp4' />
+    <video autoplay='' id='header-video' preload='auto' width='100%'>
+        <source src='videoplayback.mp4' type='video/mp4'/>
     </video>
 </div>
 
@@ -21,9 +19,9 @@
     <table id="nava">
 
         <tr>
-            <div id="home"><td>Home</td></div>
-            <div id="bag"><td><img src="bagz.png" ></td></div>
-            <div id="contact"><td>Contact</td></div>
+            <div id="home"><td><a href="index.html">Home</a></td></div>
+            <div id="bag"><td><a href="payment.html"><img src="bagz.png" ></a></td></div>
+            <div id="SignIn"><td><a href="signin.html">Sign In</a></td></div>
         </tr>
     </table>
 </div>
@@ -35,18 +33,18 @@
                 <th id="cat0" colspan="5">Categories</th>
             </tr>
             <tr>
-                <td class="cats" id="cat1" >Category 1</td>
-                <td class="cats" id="cat2" >Category 2</td>
-                <td class="cats" id="cat3" >Category 3</td>
-                <td class="cats" id="cat4" >Category 4</td>
-                <td class="cats" id="cat5" >Category 5</td>
+                <td class="cats" id="cat1" >Dogs</td>
+                <td class="cats" id="cat2" >Cats</td>
+                <td class="cats" id="cat3" >Reptiles</td>
+                <td class="cats" id="cat4" >Aquatic</td>
+                <td class="cats" id="cat5" >Exotic</td>
             </tr>
             <tr>
-                <td class="cats" id="cat6" >Category 6</td>
-                <td class="cats" id="cat7" >Category 7</td>
-                <td class="cats" id="cat8" >Category 8</td>
-                <td class="cats" id="cat9" >Category 9</td>
-                <td class="cats" id="cat10">Category 10</td>
+                <td class="cats" id="cat6" >Birds</td>
+                <td class="cats" id="cat7" >Small</td>
+                <td class="cats" id="cat8" >Large</td>
+                <td class="cats" id="cat9" >Rodent</td>
+                <td class="cats" id="cat10">Farm</td>
             </tr>
         </table>
     </div>
@@ -60,12 +58,10 @@
             </tr>
         </table>
     </div>
-
+    <div class="footer">
+        <table id="footerz">
     <div id="ericfix">
         <table id="footer">
-            <tr>
-                <th id="logo1">Logo Placeholder</th>
-            </tr>
             <tr>
                 <th>About RentAPet</th>
                 <th>For Businesses</th>
@@ -79,8 +75,5 @@
         </table>
     </div>
 </div>
-
-
-
 </body>
 </html>
