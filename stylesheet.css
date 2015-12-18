@@ -239,3 +239,7 @@ a:hover,a:focus{
     position: relative;
     height: 372px;
 }
+
+#guestPay{
+   margin:75px;
+}
