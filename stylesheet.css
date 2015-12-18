@@ -94,7 +94,11 @@ td {
     border-collapse: collapse;
     background: white;
     color:white;
+    font-size: 40px;
+    -webkit-text-stroke: 1px black;
+    vertical-align: top;
 }
+
 #cat1{
     background-image: url('Pictures/Dog.jpg');
 }
