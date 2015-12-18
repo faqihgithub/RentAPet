@@ -111,16 +111,16 @@ td {
     background-image: url('Pictures/Sugar.jpg') ;
 }
 #cat6{
-    background-image: Pictures/Dog.jpg ;
+    background-image: url('Pictures/Bird.jpg') ;
 }
 #cat7{
-    background-image: Pictures/Dog.jpg ;
+    background-image: url('Pictures/small.jpg') ;
 }
 #cat8{
-    background-image: Pictures/Dog.jpg ;
+    background-image: url('Pictures/Large.jpg') ;
 }
 #cat9{
-    background-image: Pictures/Dog.jpg ;
+    background-image: url('Pictures/Rodent.jpg') ;
 }
 #cat10{
     background-image: url('Pictures/Farm.jpg') ;
