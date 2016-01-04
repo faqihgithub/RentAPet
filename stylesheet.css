@@ -193,7 +193,6 @@ td {
 }
 
 
-
 #img10, #img11, #img12 {
     width: 300px;
     height: 300px;
@@ -243,4 +242,12 @@ a:hover,a:focus{
 
 #guestPay{
    margin:75px;
+}
+#filler4 {
+    position: relative;
+    height: 75px;
+}
+#filler5 {
+    position: relative;
+    height:283px;
 }
