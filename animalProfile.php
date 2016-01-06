@@ -1,3 +1,32 @@
+<?php
+
+/*** mysql hostname ***/
+$hostname = '127.0.0.1';
+
+/*** mysql username ***/
+$username = 'root';
+
+/*** mysql password ***/
+$password = 'root';
+
+try {
+    $dbh = new PDO("mysql:host=$hostname;dbname=rentapet", $username, $password);
+    /*** echo a message saying we have connected ***/
+    echo 'Connected to database';
+}
+catch(PDOException $e)
+{
+    echo $e->getMessage();
+}
+
+$sql = "select * from animals where type = " . $_GET['animal'];
+
+$animal = $dbh->query($sql);
+
+
+print_r($animal[0]);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +58,7 @@
         </nav>
 
         <section id="bio">
-            <p>Name: Charlie</p>
+            <p>Name: <?php echo $animal['name'] ?> </p>
             <p>About: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed purus ac velit condimentum malesuada vel vitae ex. Curabitur aliquam mi feugiat, fringilla nisi eget, luctus nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus imperdiet molestie ipsum, et iaculis augue consequat in. Suspendisse purus odio, iaculis ut tellus sed, lacinia semper ex.</p>
             <p>Age: 14 months</p>
             <p>Time With Rent-A-Pet: 6 months</p>

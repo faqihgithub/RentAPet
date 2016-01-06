@@ -7,4 +7,4 @@
  */
 ?>
 
-<h2>Searchign for <?php echo $_GET['animal'];?></h2>
+<h2>Searching for <?php echo $_GET['animal'];?></h2>

@@ -66,7 +66,7 @@ foreach($dbh->query($sql) as $row){
             </tr>
             <tr>
                 <td class="cats" id="cat1" >Dogs</td>
-                <td class="cats" id="cat2" >Cats</td>
+                <td class="cats" id="cat2" ><a href="search.php?animal=cat">Cats</a></td>
                 <td class="cats" id="cat3" >Reptiles</td>
                 <td class="cats" id="cat4" >Aquatic</td>
                 <td class="cats" id="cat5" >Exotic</td>
