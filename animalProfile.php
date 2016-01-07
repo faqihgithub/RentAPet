@@ -19,12 +19,13 @@ catch(PDOException $e)
     echo $e->getMessage();
 }
 
-$sql = "select * from animals where type = " . $_GET['animal'];
+$stmt = $dbh->prepare("select * from animals where id = " . $_GET['id']);
+$stmt->execute();
 
-$animal = $dbh->query($sql);
+$animal = $stmt->fetch();
 
 
-print_r($animal[0]);
+print_r($animal);
 ?>
 
 <!DOCTYPE html>
