@@ -60,10 +60,10 @@ print_r($animal);
 
         <section id="bio">
             <p>Name: <?php echo $animal['name'] ?> </p>
-            <p>About: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed purus ac velit condimentum malesuada vel vitae ex. Curabitur aliquam mi feugiat, fringilla nisi eget, luctus nisl. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus imperdiet molestie ipsum, et iaculis augue consequat in. Suspendisse purus odio, iaculis ut tellus sed, lacinia semper ex.</p>
-            <p>Age: 14 months</p>
-            <p>Time With Rent-A-Pet: 6 months</p>
-            <p>Owner Name: Patricia Smith</p>
+            <p>About: <?php echo $animal['about'] ?></p>
+            <p>Age: <?php echo $animal['age'] ?></p>
+            <p>Time With Rent-A-Pet: <?php echo $animal['membertime'] ?></p>
+            <p>Owner Name: <?php echo $animal['owner'] ?></p>
             <p>Certificate: <a href="certificatemagic_08-16-30.pdf">Click Here</a></p>
 
             <p></p>
@@ -78,9 +78,9 @@ print_r($animal);
         <section id="friends" class="hidden">
 
             <ul id="friendslist" class="clearfix">
-                <li>Requirements:</li>
-                <li>Cost:</li>
-                <p><a href="">RENT ME!</a></p>
+                <li>Requirements: <?php echo $animal['req'] ?></li>
+                <li>Cost: <?php echo $animal['price'] ?></li>
+                <p><a href="payment.php">RENT ME!</a></p>
             </ul>
         </section>
 
