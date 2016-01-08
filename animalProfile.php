@@ -41,13 +41,13 @@ print_r($animal);
 <body>
 
 <div id="topbar">
-    <a href="">Back to Pets</a>
+    <a href="index.php">Back to Pets</a>
 </div>
 
 <div id="w">
     <div id="content" class="clearfix">
         <div id="userphoto"><img src="https://goo.gl/rpAa2O" alt="default avatar" width="250px"></div>
-        <h1>Charlie</h1>
+        <h1><?php echo $animal['name'] ?></h1>
 
         <nav id="profiletabs">
             <ul class="clearfix">

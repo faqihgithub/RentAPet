@@ -37,7 +37,7 @@ foreach($dbh->query($sql) as $row){
     <script type="text/javascript" src="script.js"></script>
     <title>RentAPet</title>
 </head>
-
+<body>
 <div id="video">
     <video autoplay='' id='header-video' preload='auto' width='100%' controls loop>
         <source src='videoplayback.mp4' type='video/mp4'/>
