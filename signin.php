@@ -37,9 +37,9 @@ catch(PDOException $e)
     <table id="nava">
 
         <tr>
-            <div id="home"><td><a href="index.html">Home</a></td></div>
-            <div id="bag"><td><a href="payment.html"><img src="Pictures/bagz.png" ></a></td></div>
-            <div id="SignIn"><td><a href="signin.html">Sign In</a></td></div>
+            <div id="home"><td><a href="index.php">Home</a></td></div>
+            <div id="bag"><td><a href="payment.php"><img src="Pictures/bagz.png" ></a></td></div>
+            <div id="SignIn"><td><a href="signin.php">Sign In</a></td></div>
         </tr>
     </table>
 </div>
@@ -53,7 +53,7 @@ catch(PDOException $e)
         <input type="button" name="signin" id="signin" value="Sign-In">
     </form>
     <div id="buttonsu">
-        <a href="signup.html">
+        <a href="signup.php">
             <button>Sign Up</button>
         </a>
     </div>
@@ -69,8 +69,8 @@ catch(PDOException $e)
                     <th>Support</th>
                 </tr>
                 <tr>
-                    <td>About Us</td>
-                    <td><a href="signin.html">Sign In</a></td>
+                    <td><a href="aboutUs.html">About Us</a></td>
+                    <td><a href="signin.php">Sign In</a></td>
                     <td>Email Us</td>
                 </tr>
             </table>

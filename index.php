@@ -52,8 +52,8 @@ foreach($dbh->query($sql) as $row){
 
         <tr>
             <div id="home"><td><a href="index.php">Home</a></td></div>
-            <div id="bag"><td><a href="payment.html"><img src="Pictures/bagz.png" ></a></td></div>
-            <div id="SignIn"><td><a href="signin.html">Sign In</a></td></div>
+            <div id="bag"><td><a href="payment.php"><img src="Pictures/bagz.png" ></a></td></div>
+            <div id="SignIn"><td><a href="signin.php">Sign In</a></td></div>
         </tr>
     </table>
 </div>
@@ -65,18 +65,18 @@ foreach($dbh->query($sql) as $row){
                 <th id="cat0" colspan="5">Categories</th>
             </tr>
             <tr>
-                <td class="cats" id="cat1" >Dogs</td>
+                <td class="cats" id="cat1" ><a href="search.php?animal=dog">Dogs</a></td>
                 <td class="cats" id="cat2" ><a href="search.php?animal=cat">Cats</a></td>
-                <td class="cats" id="cat3" >Reptiles</td>
-                <td class="cats" id="cat4" >Aquatic</td>
-                <td class="cats" id="cat5" >Exotic</td>
+                <td class="cats" id="cat3" ><a href="search.php?animal=reptiles">Reptiles</a></td>
+                <td class="cats" id="cat4" ><a href="search.php?animal=aquatic">Aquatic</a></td>
+                <td class="cats" id="cat5" ><a href="search.php?animal=exotic">Exotic</a></td>
             </tr>
             <tr>
-                <td class="cats" id="cat6" >Birds</td>
-                <td class="cats" id="cat7" >Small</td>
-                <td class="cats" id="cat8" >Large</td>
+                <td class="cats" id="cat6" ><a href="search.php?animal=bird">Birds</a></td>
+                <td class="cats" id="cat7" ><a href="search.php?animal=small">Small</a></td>
+                <td class="cats" id="cat8" ><a href="search.php?animal=large">Large</a></td>
                 <td class="cats" id="cat9" ><a href="search.php?animal=rodent">Rodent</a></td>
-                <td class="cats" id="cat10">Farm</td>
+                <td class="cats" id="cat10"><a href="search.php?animal=farm">Farm</a></td>
             </tr>
         </table>
     </div>
@@ -100,7 +100,7 @@ foreach($dbh->query($sql) as $row){
                         <th>Support</th>
                     </tr>
                     <tr>
-                        <td>About Us</td>
+                        <td><a href="aboutUs.html">About Us</a></td>
                         <td><a href="signin.html">Sign In</a></td>
                         <td>Email Us</td>
                     </tr>
