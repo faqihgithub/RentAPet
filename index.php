@@ -51,7 +51,7 @@ foreach($dbh->query($sql) as $row){
     <table id="nava">
 
         <tr>
-            <div id="home"><td><a href="index.html">Home</a></td></div>
+            <div id="home"><td><a href="index.php">Home</a></td></div>
             <div id="bag"><td><a href="payment.html"><img src="Pictures/bagz.png" ></a></td></div>
             <div id="SignIn"><td><a href="signin.html">Sign In</a></td></div>
         </tr>
