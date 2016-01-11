@@ -272,3 +272,13 @@ a:hover,a:focus{
 .QA {
     padding:25px;
 }
+
+#filler7{
+    position: relative;
+    height: 50px;
+}
+
+#filler8{
+    position: relative;
+    height: 50px;
+}

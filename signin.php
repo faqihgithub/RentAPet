@@ -44,6 +44,7 @@ catch(PDOException $e)
     </table>
 </div>
 <center>
+    <div id="filler7"></div>
     <form>
         <h2>Sign - In</h2>
         <label>Username :</label>

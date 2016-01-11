@@ -47,6 +47,7 @@ catch(PDOException $e)
     </table>
 </div>
 <div id="form" style="background-color: #03b5aa ">
+    <div id="filler8"></div>
     <center>
         <form>
             <h2>Register for Rent-A-Pet</h2>
