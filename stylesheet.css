@@ -183,10 +183,10 @@ td {
     color: white;
     text-align: center;
     background: #333;
-    font-size: 11px;
     clear: both;
     bottom:0px;
     font-size: 20px;
+
 }
 
 #block {
@@ -281,4 +281,8 @@ a:hover,a:focus{
 #filler8{
     position: relative;
     height: 50px;
+}
+
+.footer1{
+    width:33%;
 }
