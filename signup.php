@@ -40,13 +40,14 @@ catch(PDOException $e)
     <table id="nava">
 
         <tr>
-            <div id="home"><td><a href="index.html">Home</a></td></div>
-            <div id="bag"><td><a href="payment.html"><img src="Pictures/bagz.png" ></a></td></div>
-            <div id="SignIn"><td><a href="signin.html">Sign In</a></td></div>
+            <div id="home"><td><a href="index.php">Home</a></td></div>
+            <div id="bag"><td><a href="payment.php"><img src="Pictures/bagz.png" ></a></td></div>
+            <div id="SignIn"><td><a href="signin.php">Sign In</a></td></div>
         </tr>
     </table>
 </div>
 <div id="form" style="background-color: #03b5aa ">
+    <div id="filler8"></div>
     <center>
         <form>
             <h2>Register for Rent-A-Pet</h2>
@@ -189,8 +190,8 @@ catch(PDOException $e)
                     <th>Support</th>
                 </tr>
                 <tr>
-                    <td>About Us</td>
-                    <td><a href="signin.html">Sign In</a></td>
+                    <td><a href="aboutUs.html">About Us</a></td>
+                    <td><a href="signin.php">Sign In</a></td>
                     <td>Email Us</td>
                 </tr>
             </table>
@@ -198,4 +199,3 @@ catch(PDOException $e)
 </body>
 
 </html>
-
