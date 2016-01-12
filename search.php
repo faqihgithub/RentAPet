@@ -18,7 +18,38 @@ catch(PDOException $e)
 {
     echo $e->getMessage();
 }
+$stmt = $dbh->prepare("SELECT * FROM animals WHERE 'type'=:animal");
+$stmt->execute(array('animal'=>$_GET['animal']));
+$animals = $stmt->fetchAll();
 
 ?>
 
 <h2>Searching for <?php echo $_GET['animal'];?></h2>
+
+<?php
+if($animals && count($animals)){
+    ?>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php
+        foreach($animals as $animal){
+            ?>
+            <tr>
+                <td><?php echo $animal['name']?></td>
+            </tr>
+            <?php
+        }
+        ?>
+        </tbody>
+    </table>
+    <?php
+}else{
+    echo "There are no animals in this system.";
+}
+?>
+

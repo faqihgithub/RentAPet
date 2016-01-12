@@ -21,10 +21,7 @@ catch(PDOException $e)
 
 $stmt = $dbh->prepare("select * from animals where id = " . $_GET['id']);
 $stmt->execute();
-
 $animal = $stmt->fetch();
-
-
 print_r($animal);
 ?>
 
@@ -61,8 +58,8 @@ print_r($animal);
         <section id="bio">
             <p>Name: <?php echo $animal['name'] ?> </p>
             <p>About: <?php echo $animal['about'] ?></p>
-            <p>Age: <?php echo $animal['age'] ?></p>
-            <p>Time With Rent-A-Pet: <?php echo $animal['membertime'] ?></p>
+            <p>Age: <?php echo $animal['birthdate'] ?></p>
+            <p>Time With Rent-A-Pet: <?php echo $animal['membersince'] ?></p>
             <p>Owner Name: <?php echo $animal['owner'] ?></p>
             <p>Certificate: <a href="certificatemagic_08-16-30.pdf">Click Here</a></p>
 
@@ -79,7 +76,7 @@ print_r($animal);
 
             <ul id="friendslist" class="clearfix">
                 <li>Requirements: <?php echo $animal['req'] ?></li>
-                <li>Cost: <?php echo $animal['price'] ?></li>
+                <li>Cost: $<?php echo $animal['price'] ?> per hour.</li>
                 <p><a href="payment.php">RENT ME!</a></p>
             </ul>
         </section>
