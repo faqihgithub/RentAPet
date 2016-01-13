@@ -96,13 +96,12 @@ foreach($dbh->query($sql) as $row){
                 <table id="footer">
                     <tr id="footerTop">
                         <th class="footer1"><a href="about.html">About Rent-A-Pet</a></th>
-                        <th class="footer1">For Businesses</th>
-                        <th class="footer1">Support</th>
+                        <th class="footer1"><a href="about.html">Email Us</a></th>
                     </tr>
                     <tr id="footerBottom">
                         <th class="footer1"><a href="aboutUs.html">About Us</a></th>
                         <th class="footer1"><a href="signin.html">Sign In</a></th>
-                        <th class="footer1">Email Us</th>
+
                     </tr>
                 </table>
             </div>

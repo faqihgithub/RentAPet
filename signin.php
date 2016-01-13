@@ -64,15 +64,14 @@ catch(PDOException $e)
     <table id="footerz">
         <div id="ericfix">
             <table id="footer">
-                <tr>
-                    <th><a href="about.html">About Rent-A-Pet</a></th>
-                    <th>For Businesses</th>
-                    <th>Support</th>
+                <tr id="footerTop">
+                    <th class="footer1"><a href="about.html">About Rent-A-Pet</a></th>
+                    <th class="footer1"><a href="about.html">Email Us</a></th>
                 </tr>
-                <tr>
-                    <td><a href="aboutUs.html">About Us</a></td>
-                    <td><a href="signin.php">Sign In</a></td>
-                    <td>Email Us</td>
+                <tr id="footerBottom">
+                    <th class="footer1"><a href="aboutUs.html">About Us</a></th>
+                    <th class="footer1"><a href="signin.php">Sign In</a></th>
+
                 </tr>
             </table>
         </div>
