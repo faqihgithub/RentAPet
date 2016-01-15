@@ -21,7 +21,7 @@ catch(PDOException $e)
 session_start();
 
 $registered = $_SESSION["registered"];
-$username = $_SESSION["username"];
+//$username = $_SESSION["username"];
 
 if(isset($_SESSION['username'])){
     header('location: index.php');
@@ -85,9 +85,9 @@ if(@$_POST['login']) {
     <form method="POST">
         <h2>Sign - In</h2>
         <label>Username :</label>
-        <input type="text" name="ddusername" id="name" required> <br><br>
+        <input type="text" name="username" id="name" required> <br><br>
         <label> Password :</label>
-        <input type="text" name="ddpassword" id="passsword" required> <br><br>
+        <input type="text" name="password" id="passsword" required> <br><br>
         <button type="submit" name="login" value="1">Sign In</button>
         <?php
         if(isset($_SESSION['registered'])){
