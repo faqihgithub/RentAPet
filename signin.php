@@ -18,7 +18,46 @@ catch(PDOException $e)
 {
     echo $e->getMessage();
 }
+session_start();
 
+$registered = $_SESSION["registered"];
+$UserName = $_SESSION["userName"];
+
+if(isset($_SESSION['userName'])){
+    header('location: profile.php');
+}
+
+$error = false;
+$success = false;
+
+if(@$_POST['login']) {
+    if (!$_POST['username']) {
+
+    }
+    if (!$_POST['password']) {
+
+    }
+
+    $query = $dbh->prepare("SELECT * FROM signup WHERE username = :username AND password = :password");
+    $result = $query->execute(
+        array(
+            'username' => $_POST['user'],
+            'password' => $_POST['password']
+        )
+    );
+    $userinfo = $query->fetch();
+    if ($userinfo) {
+
+        $success = "User, " . $_POST['user'] . " was successfully logged in.";
+
+        $_SESSION["firstName"] = $userinfo['firstName'];
+        $_SESSION["userName"] = $userinfo['userName'];
+
+        header("Location: index.php");
+    } else {
+        $success = "There was an error logging into the account.";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -45,13 +84,29 @@ catch(PDOException $e)
 </div>
 <center>
     <div id="filler7"></div>
-    <form>
+    <form method="POST">
         <h2>Sign - In</h2>
         <label>Username :</label>
-        <input type="text" name="ddusername" id="name"> <br><br>
+        <input type="text" name="ddusername" id="name" required> <br><br>
         <label> Password :</label>
-        <input type="text" name="ddpassword" id="passsword"> <br><br>
-        <input type="button" name="signin" id="signin" value="Sign-In">
+        <input type="text" name="ddpassword" id="passsword" required> <br><br>
+        <button type="submit" name="login" value="1">Sign In</button>
+        <?php
+        if(isset($_SESSION['registered'])){
+        echo '<p id="registered">Successfully Registered</p>';
+        unset($_SESSION['registered']);
+        }
+        ?>
+                      <?php
+        if($error){
+        echo $error;
+        echo '<br>';
+        }
+        if($success){
+        echo $success;
+        echo '<br>';
+        }
+        ?>
     </form>
     <div id="buttonsu">
         <a href="signup.php">
