@@ -19,16 +19,13 @@ catch(PDOException $e)
     echo $e->getMessage();
 }
 $stmt = $dbh->prepare("SELECT * FROM animals WHERE 'type'=:animal");
-$stmt->execute(array('animal'=>$_GET['animal']));
-$animals = $stmt->fetchAll();
+$result = $stmt->execute(array('animal'=>$_GET['animal']));
+
 
 ?>
 
 <h2>Searching for <?php echo $_GET['animal'];?></h2>
 
-<?php
-if($animals && count($animals)){
-    ?>
     <table>
         <thead>
         <tr>
@@ -37,19 +34,24 @@ if($animals && count($animals)){
         </thead>
         <tbody>
         <?php
-        foreach($animals as $animal){
-            ?>
-            <tr>
-                <td><?php echo $animal['name']?></td>
-            </tr>
-            <?php
+        if($result->num_rows > 0) {
+            WHILE($animals = $result->fetch_assoc()){
+                $animalname = $animals['name'];
+
+                echo '<tr>';
+                echo '<td><?php echo $animalname?></td>';
+                echo '</tr>';
+            }
+        }
+        else{
+            echo '<tr>';
+            echo '<td>0 Results Found.</td>';
+            echo '</tr>';
         }
         ?>
         </tbody>
     </table>
     <?php
-}else{
-    echo "There are no animals in this system.";
-}
+
 ?>
 
