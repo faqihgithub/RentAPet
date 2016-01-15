@@ -19,6 +19,8 @@ catch(PDOException $e)
     echo $e->getMessage();
 }
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -46,11 +48,7 @@ catch(PDOException $e)
 <center>
     <form>
         <h2 id="guestPay"> Guest Checkout </h2>
-        <label> Country or Region : </label>
-        <select name="ccountry">
-            <option> - Country or Region - </option>
-            <option> United States </option>
-        </select> <br><br>
+        </select> <br>
         <label> First Name : </label>
         <input type="text" name="nname" id="name">
         <label> Last Name : </label>
@@ -67,8 +65,7 @@ catch(PDOException $e)
         <input type="text" name="phonenumber" id="phonenumber"> <br><br>
         <label> Email Address : </label>
         <input type="text" name="email" id="email"> <br><br>
-        <label> Re-enter Your Email : </label>
-        <input type="text" name="reenter" id="reenter"> <br><br>
+        <br>
         <input type="button" name="submit" id="submit" value="Submit">
     </form>
     </div>

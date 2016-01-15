@@ -21,10 +21,10 @@ catch(PDOException $e)
 session_start();
 
 $registered = $_SESSION["registered"];
-$UserName = $_SESSION["userName"];
+$username = $_SESSION["username"];
 
-if(isset($_SESSION['userName'])){
-    header('location: profile.php');
+if(isset($_SESSION['username'])){
+    header('location: index.php');
 }
 
 $error = false;
@@ -32,26 +32,24 @@ $success = false;
 
 if(@$_POST['login']) {
     if (!$_POST['username']) {
-
     }
     if (!$_POST['password']) {
-
     }
 
     $query = $dbh->prepare("SELECT * FROM signup WHERE username = :username AND password = :password");
     $result = $query->execute(
         array(
-            'username' => $_POST['user'],
+            'username' => $_POST['username'],
             'password' => $_POST['password']
         )
     );
     $userinfo = $query->fetch();
     if ($userinfo) {
 
-        $success = "User, " . $_POST['user'] . " was successfully logged in.";
+        $success = "User, " . $_POST['username'] . " was successfully logged in.";
 
-        $_SESSION["firstName"] = $userinfo['firstName'];
-        $_SESSION["userName"] = $userinfo['userName'];
+        $_SESSION["firstname"] = $userinfo['firstname'];
+        $_SESSION["username"] = $userinfo['username'];
 
         header("Location: index.php");
     } else {
