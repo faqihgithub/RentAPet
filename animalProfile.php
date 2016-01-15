@@ -43,7 +43,7 @@ print_r($animal);
 
 <div id="w">
     <div id="content" class="clearfix">
-        <div id="userphoto"><img src="https://goo.gl/rpAa2O" alt="default avatar" width="250px"></div>
+        <div id="userphoto"><img src="<?php echo $animal['pic'] ?>" alt="default avatar" width="250px"></div>
         <h1><?php echo $animal['name'] ?></h1>
 
         <nav id="profiletabs">
