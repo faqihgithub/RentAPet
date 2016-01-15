@@ -34,8 +34,8 @@ $result = $stmt->execute(array('animal'=>$_GET['animal']));
         </thead>
         <tbody>
         <?php
-        if($result->num_rows > 0) {
-            WHILE($animals = $result->fetch_assoc()){
+        if($result->$result > 0) {
+            WHILE($animals = $result->$stmt){
                 $animalname = $animals['name'];
 
                 echo '<tr>';
