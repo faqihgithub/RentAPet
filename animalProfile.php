@@ -43,7 +43,7 @@ print_r($animal);
 
 <div id="w">
     <div id="content" class="clearfix">
-        <div id="userphoto"><img src="<?php echo $animal['pic'] ?>" alt="default avatar" width="250px"></div>
+        <div id="userphoto"><img src="profilePic-<?php echo $animal['id'] ?>" alt="default avatar" width="250px"></div>
         <h1><?php echo $animal['name'] ?></h1>
 
         <nav id="profiletabs">
@@ -61,7 +61,7 @@ print_r($animal);
             <p>Age: <?php echo $animal['birthdate'] ?></p>
             <p>Time With Rent-A-Pet: <?php echo $animal['membersince'] ?></p>
             <p>Owner Name: <?php echo $animal['owner'] ?></p>
-            <p>Certificate: <a href="certificatemagic_08-16-30.pdf">Click Here</a></p>
+            <p>Certificate: <a href="Pictures/certificate-<?php echo $animal['id']; ?>.pdf">Click Here</a></p>
 
             <p></p>
         </section>

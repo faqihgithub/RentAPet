@@ -12,19 +12,17 @@ $password = 'root';
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=rentapet", $username, $password);
     /*** echo a message saying we have connected ***/
-    echo 'Connected to database';
 }
 catch(PDOException $e)
 {
-    echo $e->getMessage();
 }
-$stmt = $dbh->prepare("SELECT * FROM animals WHERE 'type'=:animal");
-$result = $stmt->execute(array('animal'=>$_GET['animal']));
-
+$stmt = $dbh->prepare("SELECT * FROM animals a WHERE a.type = :animal");
+$stmt->execute(array(':animal'=>$_GET['animal']));
+$results = $stmt->fetchAll();
 
 ?>
 
-<h2>Searching for <?php echo $_GET['animal'];?></h2>
+<h1><?php echo $_GET['animal'];?></h1>
 
     <table>
         <thead>
@@ -34,12 +32,13 @@ $result = $stmt->execute(array('animal'=>$_GET['animal']));
         </thead>
         <tbody>
         <?php
-        if($result->$result > 0) {
-            WHILE($animals = $result->$stmt){
-                $animalname = $animals['name'];
+        if(count($results) > 0) {
+            foreach($results as $animal){
+
+                $animalname = $animal['name'];
 
                 echo '<tr>';
-                echo '<td><?php echo $animalname?></td>';
+                echo "<td><a href='animalProfile.php?id=" . $animal['id'] . "'>{$animalname}</a></td>";
                 echo '</tr>';
             }
         }
