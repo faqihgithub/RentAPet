@@ -12,17 +12,14 @@ $password = 'root';
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=rentapet", $username, $password);
     /*** echo a message saying we have connected ***/
-    echo 'Connected to database';
 }
 catch(PDOException $e)
 {
-    echo $e->getMessage();
 }
 
 $stmt = $dbh->prepare("select * from animals where id = " . $_GET['id']);
 $stmt->execute();
 $animal = $stmt->fetch();
-print_r($animal);
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +40,7 @@ print_r($animal);
 
 <div id="w">
     <div id="content" class="clearfix">
-        <div id="userphoto"><img src="profilePic-<?php echo $animal['id'] ?>" alt="default avatar" width="250px"></div>
+        <div id="userphoto"><img src="Pictures/Profile/profilePic-<?php echo $animal['id'] ?>" alt="Whoops! No profile picture yet!" width="250px"></div>
         <h1><?php echo $animal['name'] ?></h1>
 
         <nav id="profiletabs">

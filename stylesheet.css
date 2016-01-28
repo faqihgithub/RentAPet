@@ -70,6 +70,12 @@ td {
     top: -21px;
 }
 
+#searchinfo {
+    top: 8%;
+    left: 3%;
+    position: absolute;
+}
+
 /* don't know */
 #panels {
     vertical-align: middle;

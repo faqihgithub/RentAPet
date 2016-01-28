@@ -21,7 +21,32 @@ $stmt->execute(array(':animal'=>$_GET['animal']));
 $results = $stmt->fetchAll();
 
 ?>
+<!DOCTYPE html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/black-paint-splatter-icons-alphanumeric/069096-black-paint-splatter-icon-alphanumeric-letter-rr.png">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <title>RentAPet</title>
+</head>
 
+<body>
+<div id="nav">
+    <div id="rentapet">
+        <p>Rent-A-Pet - Search</p>
+    </div>
+    <table id="nava">
+
+        <tr>
+            <div id="home"><td><a href="index.php">Home</a></td></div>
+            <div id="bag"><td><a href="payment.php"><img src="Pictures/bagz.png" ></a></td></div>
+            <div id="SignIn"><td><a href="signin.php">Sign In</a></td></div>
+        </tr>
+    </table>
+</div>
+
+<div id="searchinfo">
 <h1><?php echo $_GET['animal'];?></h1>
 
     <table>
@@ -53,4 +78,6 @@ $results = $stmt->fetchAll();
     <?php
 
 ?>
+</div>
+</body>
 
