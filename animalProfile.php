@@ -40,7 +40,7 @@ $animal = $stmt->fetch();
 
 <div id="w">
     <div id="content" class="clearfix">
-        <div id="userphoto"><img src="Pictures/Profile/profilePic-<?php echo $animal['id'] ?>" alt="Whoops! No profile picture yet!" width="250px"></div>
+        <div id="userphoto"><img src="Pictures/Profile/profilePic-<?php echo $animal['id'] ?>.jpg" alt="Whoops! No profile picture yet!" width="250px"></div>
         <h1><?php echo $animal['name'] ?></h1>
 
         <nav id="profiletabs">
